@@ -12,10 +12,8 @@ char *vigenere_encrypt(char *plaintext, char *key) {
       if (key[k] >= 'A' && key[k] <= 'Z') {
         shift = key[k] - 'A';
         plaintext[i] = ((plaintext[i] - 'A' + shift) % WRAP_AROUND) + 'A';
-        ++k;
-      } else {
-        ++k;
       }
+      ++k;
     }
   }
   return plaintext;
@@ -31,10 +29,8 @@ char *vigenere_decrypt(char *ciphertext, char *key) {
         shift = key[k] - 'A';
         ciphertext[i] =
             ((ciphertext[i] - 'A' - shift + WRAP_AROUND) % WRAP_AROUND) + 'A';
-        ++k;
-      } else {
-        ++k;
       }
+      ++k;
     }
   }
   return ciphertext;
