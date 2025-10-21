@@ -2,7 +2,7 @@
 
 For VSCode-based editors and Clang. Requires CodeLLDB extension. clangd extension is recommended.
 
-An assign for the DTU course Basic C Programming.
+An assignment for the DTU course Basic C Programming.
 
 The program uses either Caesar or Vigenere to encrypt or decrypt an upper-case string provided through command-line interface. The key for Vigenere is also provided through CLI.
 
